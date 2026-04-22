@@ -122,7 +122,7 @@ export const ScannerModal: React.FC<ScannerModalProps> = ({ onScanSuccess, onClo
         </div>
 
         <div className="p-4 bg-gray-50 text-center text-sm text-gray-500 shrink-0">
-           Kohdista kamera esimiehen korttiin tai pelastajan passiin.
+           Kohdista kamera esihenkilön korttiin tai pelastajan passiin.
         </div>
       </div>
     </div>

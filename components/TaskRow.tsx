@@ -39,7 +39,7 @@ export const TaskRow: React.FC<TaskRowProps> = memo(({ item, state, traineeName,
   const handleTrainerClick = () => {
     if (state.trainerSigned) {
       // Allow clearing the signature
-      if (confirm("Poistetaanko esimiehen kuittaus?")) {
+      if (confirm("Poistetaanko esihenkilön kuittaus?")) {
         onChange(item.id, { trainerSigned: false, trainerName: undefined });
       }
     } else {
@@ -102,7 +102,7 @@ export const TaskRow: React.FC<TaskRowProps> = memo(({ item, state, traineeName,
             }`}
           >
             {state.trainerSigned ? <CheckCircle2 className="w-3.5 h-3.5" /> : <QrCode className="w-3.5 h-3.5" />}
-            {state.trainerSigned ? 'Hyväksytty' : 'Esimies'}
+            {state.trainerSigned ? 'Hyväksytty' : 'Esihenkilö'}
           </button>
 
         </div>

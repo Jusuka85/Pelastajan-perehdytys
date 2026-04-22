@@ -244,10 +244,10 @@ const App: React.FC = () => {
     // Error / Mismatch handling
     else {
       if ((scanningTaskId || scanningSectionId) && data.type !== 'SUPERVISOR_SIGNATURE') {
-         alert("Virhe: Skannasit pelastajan passin. Skannaa esimiehen kuittauskoodi.");
+         alert("Virhe: Skannasit pelastajan passin. Skannaa esihenkilön kuittauskoodi.");
       }
       else if (isSupervisorScanning && data.type !== 'TRAINEE_PROGRESS') {
-         alert("Virhe: Skannasit esimiehen koodin. Skannaa pelastajan passi.");
+         alert("Virhe: Skannasit esihenkilön koodin. Skannaa pelastajan passi.");
       }
     }
   };
@@ -403,8 +403,8 @@ const App: React.FC = () => {
                 className="flex items-center gap-1.5 sm:gap-2 bg-slate-800 hover:bg-slate-700 px-2 sm:px-3 py-2 rounded-lg text-xs sm:text-sm transition-colors border border-slate-700 whitespace-nowrap"
               >
                 <QrCode className="w-4 h-4 text-green-400" />
-                <span className="sm:hidden">Esimies</span>
-                <span className="hidden sm:inline">Esimiestyökalut</span>
+                <span className="sm:hidden">Esihenkilö</span>
+                <span className="hidden sm:inline">Esihenkilötyökalut</span>
               </button>
 
               <button 

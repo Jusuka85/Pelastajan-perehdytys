@@ -56,7 +56,7 @@ export const CompletionModal: React.FC<CompletionModalProps> = ({ traineeName, o
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-sm text-blue-800 flex gap-3">
              <PartyPopper className="w-5 h-5 shrink-0" />
              <p>
-               Toimintaohje: Tallenna todistus (PDF) ja lähetä se esimiehelle sähköpostilla.
+               Toimintaohje: Tallenna todistus (PDF) ja lähetä se esihenkilölle sähköpostilla.
              </p>
           </div>
 

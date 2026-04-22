@@ -98,7 +98,7 @@ export const TraineeBadge: React.FC<TraineeBadgeProps> = ({ traineeName, tasks, 
 
           <div className="text-xs text-center text-gray-400 max-w-[200px]">
             <Smartphone className="w-4 h-4 mx-auto mb-1" />
-            Näytä tämä koodi esimiehelle, joka voi tarkistaa suorituksesi "Esimiestyökaluista".
+            Näytä tämä koodi esihenkilölle, joka voi tarkistaa suorituksesi "Esihenkilötyökaluista".
           </div>
 
         </div>

@@ -51,7 +51,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
             }`}
           >
             <Shield className="w-4 h-4" />
-            Esimiehelle
+            Esihenkilölle
           </button>
         </div>
 
@@ -79,7 +79,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                     <div className="bg-white p-2 rounded-lg shadow-sm h-fit"><QrCode className="w-5 h-5 text-green-500" /></div>
                     <div>
                       <h4 className="font-bold text-sm">Turvalliset kuittaukset</h4>
-                      <p className="text-xs text-gray-600">Esimiehen kuittaukset tehdään turvallisella QR-kooditunnisteella, mikä takaa oikeellisuuden.</p>
+                      <p className="text-xs text-gray-600">Esihenkilön kuittaukset tehdään turvallisella QR-kooditunnisteella, mikä takaa oikeellisuuden.</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -93,7 +93,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                     <div className="bg-white p-2 rounded-lg shadow-sm h-fit"><Shield className="w-5 h-5 text-orange-500" /></div>
                     <div>
                       <h4 className="font-bold text-sm">Muokattava sisältö</h4>
-                      <p className="text-xs text-gray-600">Esimiehet voivat muokata perehdytysrunkoa ja jakaa sen linkkinä uusille pelastajille.</p>
+                      <p className="text-xs text-gray-600">Esihenkilöt voivat muokata perehdytysrunkoa ja jakaa sen linkkinä uusille pelastajille.</p>
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                 <ol className="list-decimal list-inside space-y-2 text-gray-600 bg-gray-50 p-4 rounded-lg">
                   <li>Pelastaja täyttää nimensä ja seuraa listaa omalta laitteeltaan.</li>
                   <li>Kun tehtävä on suoritettu, pelastaja merkitsee sen tehdyksi.</li>
-                  <li>Esimies tai perehdyttäjä vahvistaa suorituksen näyttämällä omaa QR-koodiaan.</li>
+                  <li>Esihenkilö tai perehdyttäjä vahvistaa suorituksen näyttämällä omaa QR-koodiaan.</li>
                   <li>Kun kaikki kohdat ovat valmiina, järjestelmä luo automaattisesti virallisen todistuksen.</li>
                 </ol>
               </div>
@@ -140,14 +140,14 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                 <div className="flex gap-4">
                   <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center font-bold text-slate-600 shrink-0">3</div>
                   <div>
-                    <h4 className="font-bold">Esimiehen kuittaus</h4>
+                    <h4 className="font-bold">Esihenkilön kuittaus</h4>
                     <p className="text-sm text-gray-600 mb-2">
-                      Kun haluat esimiehen kuittauksen, paina mustaa 
-                      <span className="inline-block px-2 py-0.5 mx-1 bg-slate-800 text-white rounded text-xs font-bold">Esimies</span> 
+                      Kun haluat esihenkilön kuittauksen, paina mustaa 
+                      <span className="inline-block px-2 py-0.5 mx-1 bg-slate-800 text-white rounded text-xs font-bold">Esihenkilö</span> 
                       -painiketta. Tämä avaa kameran.
                     </p>
                     <p className="text-sm text-gray-600">
-                      Pyydä esimiestä näyttämään hänen QR-koodinsa ja lue se kameralla. Kuittaus ilmestyy riville automaattisesti.
+                      Pyydä esihenkilöä näyttämään hänen QR-koodinsa ja lue se kameralla. Kuittaus ilmestyy riville automaattisesti.
                     </p>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                   <div>
                     <h4 className="font-bold">Oma Passi (QR)</h4>
                     <p className="text-sm text-gray-600">
-                      Yläpalkin "Oma Passi" -painikkeesta saat näkyviin oman QR-koodisi. Esimies voi skannata tämän tarkistaakseen edistymisesi omalta laitteeltaan.
+                      Yläpalkin "Oma Passi" -painikkeesta saat näkyviin oman QR-koodisi. Esihenkilö voi skannata tämän tarkistaakseen edistymisesi omalta laitteeltaan.
                     </p>
                   </div>
                 </div>
@@ -168,11 +168,11 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
           {/* TAB: SUPERVISOR INSTRUCTIONS */}
           {activeTab === 'supervisor' && (
             <div className="space-y-6 animate-in slide-in-from-right-4 duration-300">
-              <h2 className="text-xl font-bold text-slate-900 border-b pb-2">Ohjeet Esimiehelle</h2>
+              <h2 className="text-xl font-bold text-slate-900 border-b pb-2">Ohjeet Esihenkilölle</h2>
 
               <div className="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
                 <p className="text-sm text-orange-800 font-medium">
-                  Esimiestyökalut löytyvät yläpalkin painikkeesta.
+                  Esihenkilötyökalut löytyvät yläpalkin painikkeesta.
                 </p>
               </div>
 
@@ -183,7 +183,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                     Kuittaaminen (QR-koodi)
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Avaa esimiestyökalut ja kirjoita nimesi kenttään. Ruudulle ilmestyy henkilökohtainen QR-koodisi.
+                    Avaa esihenkilötyökalut ja kirjoita nimesi kenttään. Ruudulle ilmestyy henkilökohtainen QR-koodisi.
                     Näytä tätä koodia pelastajalle, kun hän pyytää kuittausta suoritukseen.
                   </p>
                 </div>
@@ -194,7 +194,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                     Pelastajan edistymisen tarkistus
                   </h4>
                   <p className="text-sm text-gray-600">
-                    Esimiestyökaluista voit valita "Tarkista Pelastajan Passi". Tämä avaa kameran.
+                    Esihenkilötyökaluista voit valita "Tarkista Pelastajan Passi". Tämä avaa kameran.
                     Skannaa pelastajan luoma QR-koodi nähdäksesi yhteenvedon hänen suorituksistaan ilman paperien selailua.
                   </p>
                 </div>

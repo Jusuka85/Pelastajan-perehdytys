@@ -158,7 +158,7 @@ export const SupervisorBadge: React.FC<SupervisorBadgeProps> = ({
           <div className="bg-slate-800 p-4 flex justify-between items-center text-white">
             <div className="flex items-center gap-2">
               <Lock className="w-5 h-5 text-orange-400" />
-              <h3 className="font-bold">Esimieskirjautuminen</h3>
+              <h3 className="font-bold">Esihenkilökirjautuminen</h3>
             </div>
             <button onClick={onClose} className="p-1 hover:bg-slate-700 rounded-full transition-colors">
               <X className="w-5 h-5" />
@@ -271,7 +271,7 @@ export const SupervisorBadge: React.FC<SupervisorBadgeProps> = ({
         <div className="bg-slate-800 p-4 flex justify-between items-center text-white">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-5 h-5 text-green-400" />
-            <h3 className="font-bold">Esimiehen Työkalut</h3>
+            <h3 className="font-bold">Esihenkilön Työkalut</h3>
           </div>
           <button onClick={onClose} className="p-1 hover:bg-slate-700 rounded-full transition-colors">
             <X className="w-5 h-5" />
@@ -282,11 +282,11 @@ export const SupervisorBadge: React.FC<SupervisorBadgeProps> = ({
           
           {/* Section 1: Generate Supervisor ID */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase text-slate-500 border-b pb-1">1. Esimiehen Tunniste</h4>
+            <h4 className="text-sm font-bold uppercase text-slate-500 border-b pb-1">1. Esihenkilön Tunniste</h4>
             
             <div className="w-full">
               <label className="block text-xs font-bold text-gray-400 mb-2">
-                Esimiehen Nimi
+                Esihenkilön Nimi
               </label>
               <div className="relative">
                 <input 
@@ -303,9 +303,9 @@ export const SupervisorBadge: React.FC<SupervisorBadgeProps> = ({
             <div className={`p-4 bg-white border-2 rounded-xl flex items-center justify-center transition-all duration-300 ${qrUrl ? 'border-green-500 shadow-sm' : 'border-gray-100 bg-gray-50'}`}>
               {qrUrl ? (
                 <div className="text-center space-y-2">
-                    <img src={qrUrl} alt="Esimiehen QR-koodi" className="w-32 h-32 mx-auto" />
+                    <img src={qrUrl} alt="Esihenkilön QR-koodi" className="w-32 h-32 mx-auto" />
                     <button 
-                        onClick={() => handleDownload(qrUrl, 'esimies')}
+                        onClick={() => handleDownload(qrUrl, 'esihenkilö')}
                         className="text-xs flex items-center justify-center gap-1 text-slate-500 hover:text-slate-800 mx-auto"
                     >
                         <Download className="w-3 h-3" /> Tallenna kuva
