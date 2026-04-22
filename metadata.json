@@ -3,5 +3,6 @@
   "description": "Sähköinen lomake pelastajan perehdytyksen seurantaan ja kuittaukseen.",
   "requestFramePermissions": [
     "camera"
-  ]
+  ],
+  "majorCapabilities": []
 }
