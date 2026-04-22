@@ -53,7 +53,7 @@ export const TraineeBadge: React.FC<TraineeBadgeProps> = ({ traineeName, tasks, 
   }, [traineeName, tasks]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
       <div className="bg-white rounded-2xl w-full max-w-sm overflow-hidden shadow-2xl animate-in fade-in zoom-in duration-200">
         
         <div className="bg-slate-800 p-4 flex justify-between items-center text-white">

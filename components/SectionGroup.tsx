@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { Section, TaskState } from '../types';
 import { TaskRow } from './TaskRow';
 import { ProgressBar } from './ProgressBar';
@@ -14,7 +14,7 @@ interface SectionGroupProps {
   onSectionScanRequest: (sectionId: string) => void;
 }
 
-export const SectionGroup: React.FC<SectionGroupProps> = ({ 
+export const SectionGroup: React.FC<SectionGroupProps> = memo(({ 
   section, 
   tasks, 
   traineeName, 
@@ -97,4 +97,6 @@ export const SectionGroup: React.FC<SectionGroupProps> = ({
       )}
     </div>
   );
-};
+});
+
+SectionGroup.displayName = 'SectionGroup';

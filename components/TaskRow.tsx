@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { memo } from 'react';
 import { TaskItem, TaskState } from '../types';
 import { User, CheckCircle2, Calendar, QrCode } from 'lucide-react';
 
@@ -11,7 +11,7 @@ interface TaskRowProps {
   onScanRequest: (taskId: string) => void;
 }
 
-export const TaskRow: React.FC<TaskRowProps> = ({ item, state, traineeName, onChange, onScanRequest }) => {
+export const TaskRow: React.FC<TaskRowProps> = memo(({ item, state, traineeName, onChange, onScanRequest }) => {
   const isComplete = state.date && state.traineeSigned && state.trainerSigned;
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,9 +24,15 @@ export const TaskRow: React.FC<TaskRowProps> = ({ item, state, traineeName, onCh
       alert("Kirjoita nimesi sivun yläreunaan ennen kuittaamista.");
       return;
     }
+
+    const today = new Date().toISOString().split('T')[0];
+    const newSignedState = !state.traineeSigned;
+
     onChange(item.id, { 
-      traineeSigned: !state.traineeSigned,
-      traineeName: !state.traineeSigned ? traineeName : undefined 
+      traineeSigned: newSignedState,
+      traineeName: newSignedState ? traineeName : undefined,
+      // Automatically set date if signing and date is currently empty
+      date: (newSignedState && !state.date) ? today : state.date
     });
   };
 
@@ -122,4 +128,6 @@ export const TaskRow: React.FC<TaskRowProps> = ({ item, state, traineeName, onCh
       </div>
     </div>
   );
-};
+});
+
+TaskRow.displayName = 'TaskRow';

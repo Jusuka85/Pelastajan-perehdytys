@@ -508,7 +508,7 @@ const App: React.FC = () => {
           </div>
 
           {/* Sticky Progress Bar */}
-          <div className="bg-white/95 backdrop-blur rounded-lg p-4 shadow-sm border border-gray-200 mb-8 flex items-center gap-4 no-print sticky top-20 z-10 transition-shadow">
+          <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200 mb-8 flex items-center gap-4 no-print sticky top-20 z-10 transition-shadow">
             <div className={`p-2 rounded-full ${stats.percentage === 100 ? 'bg-green-100' : 'bg-gray-100'}`}>
               <CheckCircle className={`w-6 h-6 ${stats.percentage === 100 ? 'text-green-600' : 'text-gray-400'}`} />
             </div>
