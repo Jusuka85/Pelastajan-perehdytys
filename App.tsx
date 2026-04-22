@@ -408,14 +408,6 @@ const App: React.FC = () => {
               </button>
 
               <button 
-                onClick={printForm}
-                className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-200"
-                title="Tulosta PDF (Lista)"
-              >
-                <Printer className="w-5 h-5" />
-              </button>
-              
-              <button 
                 onClick={() => setShowClearConfirm(true)}
                 className="p-2 bg-red-900/50 hover:bg-red-900 rounded-lg transition-colors text-red-200 ml-1 sm:ml-2"
                 title="Tyhjennä lomake (säilyttää rakenteen)"

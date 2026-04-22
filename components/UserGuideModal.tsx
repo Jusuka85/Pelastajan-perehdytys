@@ -172,7 +172,7 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
 
               <div className="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
                 <p className="text-sm text-orange-800 font-medium">
-                  Esimiestyökalut löytyvät yläpalkin painikkeesta. Salasana on oletuksena: <strong>112</strong>
+                  Esimiestyökalut löytyvät yläpalkin painikkeesta.
                 </p>
               </div>
 
