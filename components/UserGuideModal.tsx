@@ -107,6 +107,12 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ onClose }) => {
                   <li>Esihenkilö tai perehdyttäjä vahvistaa suorituksen näyttämällä omaa QR-koodiaan.</li>
                   <li>Kun kaikki kohdat ovat valmiina, järjestelmä luo automaattisesti virallisen todistuksen.</li>
                 </ol>
+                <div className="mt-4 p-3 bg-slate-50 border border-slate-200 rounded-lg flex items-center gap-3">
+                  <Shield className="w-5 h-5 text-slate-400 shrink-0" />
+                  <p className="text-xs text-slate-500 leading-tight">
+                    <strong>Tietosuoja ja yksityisyys:</strong> Sovellus toimii täysin paikallisesti selaimesi muistissa. Mitään syöttämiäsi tietoja ei lähetetä verkkoon, kerätä analytiikaksi tai tallenneta pilveen.
+                  </p>
+                </div>
               </div>
             </div>
           )}
